@@ -9,6 +9,206 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+  <style>
+  /* =========================================
+     TOPBAR Y NAVEGACIÓN
+     ========================================= */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #16161a;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    color: #6a6a72;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    color: #fafafa;
+  }
+
+  .nav-cta {
+    color: #b8a8ff !important;
+    font-weight: 500;
+  }
+
+  .nav-cta:hover {
+    color: #d8ccff !important;
+  }
+
+  /* =========================================
+     SELECTOR DE IDIOMA
+     ========================================= */
+  .lang-switch {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: #5a5a62;
+    padding: 0;
+    transition: color 0.2s ease;
+  }
+
+  .lang-btn:hover {
+    color: #a8a8b0;
+  }
+
+  .lang-btn.active {
+    color: #fafafa;
+    font-weight: 500;
+  }
+
+  .lang-sep {
+    color: #2a2a30;
+  }
+
+  /* =========================================
+     SERVICIOS Y BOTONES
+     ========================================= */
+  .service-card {
+    border: 1px solid #16161a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    background: #0e0e10;
+    transition: border-color 0.3s ease;
+  }
+
+  .service-card:hover {
+    border-color: #2a2a30;
+  }
+
+  .service-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-head h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fafafa;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #b8a8ff;
+    white-space: nowrap;
+    background: rgba(139, 124, 246, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  .service-card > p {
+    color: #8a8a92;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    color: #a8a8b0;
+  }
+
+  .service-list li {
+    margin: 0.3rem 0;
+  }
+
+  .process-list {
+    padding-left: 1.2rem;
+    color: #a8a8b0;
+  }
+
+  .process-list li {
+    margin: 0.6rem 0;
+  }
+
+  .cta-links {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border: 1px solid #2a2a30;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fafafa;
+    background: transparent;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    background: #16161a;
+    border-color: #3a3a42;
+  }
+
+  .btn-ghost {
+    border-color: #16161a;
+    color: #a8a8b0;
+  }
+
+  .btn-ghost:hover {
+    color: #fafafa;
+  }
+
+  .note {
+    font-size: 0.8rem;
+    color: #5a5a62;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  /* Ajuste para que el padding del body no aplaste la topbar */
+  body {
+    padding-top: 0 !important;
+  }
+  .page {
+    padding-top: 60px;
+  }
+  @media (max-width: 600px) {
+    .page {
+      padding-top: 40px;
+    }
+  }
+</style>
 <body>
 
   <div class="noise"></div>
@@ -64,7 +264,7 @@
         <div class="service-card">
           <div class="service-head">
             <h3 data-en="Custom Plugin / Script" data-es="Plugin / Script a medida">Custom Plugin / Script</h3>
-            <span class="price">from $50 USD</span>
+            <span class="price">from $10/5 USD</span>
           </div>
           <p data-en="A focused tool that solves one problem: a Discord plugin, a server-side script, an automation for your panel or a Linux utility. Includes documentation and one revision." data-es="Una herramienta enfocada que resuelve un problema: un plugin de Discord, un script del lado del servidor, una automatización para tu panel o una utilidad de Linux. Incluye documentación y una revisión.">
             A focused tool that solves one problem: a Discord plugin, a server-side script, an automation for your panel or a Linux utility. Includes documentation and one revision.
@@ -79,7 +279,7 @@
         <div class="service-card">
           <div class="service-head">
             <h3 data-en="Server Panel / Docker Setup" data-es="Panel de Servidores / Docker">Server Panel / Docker Setup</h3>
-            <span class="price">from $150 USD</span>
+            <span class="price">from $20 USD</span>
           </div>
           <p data-en="A Pterodactyl-style panel or a Docker-based setup to manage containers, allocate resources and handle users. Deployed, documented and ready to use." data-es="Un panel estilo Pterodactyl o una configuración basada en Docker para gestionar contenedores, asignar recursos y administrar usuarios. Desplegado, documentado y listo para usar.">
             A Pterodactyl-style panel or a Docker-based setup to manage containers, allocate resources and handle users. Deployed, documented and ready to use.
@@ -94,7 +294,7 @@
         <div class="service-card">
           <div class="service-head">
             <h3 data-en="Integration / Automation" data-es="Integración / Automatización">Integration / Automation</h3>
-            <span class="price">from $100 USD</span>
+            <span class="price">from $25 USD</span>
           </div>
           <p data-en="Connect your tools so they work together: panels with Discord, APIs with databases, alerts and reports. I build the glue so you stop doing repetitive work by hand." data-es="Conectá tus herramientas para que trabajen juntas: paneles con Discord, APIs con bases de datos, alertas y reportes. Construyo el pegamento para que dejes de hacer trabajo repetitivo a mano.">
             Connect your tools so they work together: panels with Discord, APIs with databases, alerts and reports. I build the glue so you stop doing repetitive work by hand.
@@ -109,7 +309,7 @@
         <div class="service-card">
           <div class="service-head">
             <h3 data-en="Maintenance / Retainer" data-es="Mantenimiento / Abono">Maintenance / Retainer</h3>
-            <span class="price">from $30 USD / month</span>
+            <span class="price">from $10 USD / month</span>
           </div>
           <p data-en="Ongoing support for your server or panel: updates, bug fixes, small improvements and monitoring. Ideal if you run a community or hosting service and need reliability." data-es="Soporte continuo para tu servidor o panel: actualizaciones, corrección de errores, mejoras pequeñas y monitoreo. Ideal si manejás una comunidad o un servicio de hosting y necesitás confiabilidad.">
             Ongoing support for your server or panel: updates, bug fixes, small improvements and monitoring. Ideal if you run a community or hosting service and need reliability.
@@ -145,10 +345,6 @@
         <p class="cta-links">
           <a href="mailto:zpenja@email.com" class="btn" data-en="Email me →" data-es="Escribime →">Email me →</a>
           <a href="https://github.com/itszencs" target="_blank" class="btn btn-ghost">GitHub</a>
-        </p>
-        <p class="note" data-en="Note: I'm 14 and work remotely with parental supervision. Invoices and payments are handled through my legal guardian." data-es="Nota: tengo 14 años y trabajo de forma remota con supervisión de mis padres. Las facturas y pagos se gestionan a través de mi tutor legal.">
-          Note: I'm 14 and work remotely with parental supervision. Invoices and payments are handled through my legal guardian.
-        </p>
       </div>
     </section>
 
