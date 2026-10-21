@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Axel Jerez — Developer</title>
+  <title>Axel Jerez — Backend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,24 +15,40 @@
 
   <main class="page">
 
+    <nav class="topbar reveal">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <div class="nav-links">
+        <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+        <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="services.html" class="nav-cta" data-en="Services" data-es="Servicios">Services</a>
+      </div>
+    </nav>
+
     <header class="header reveal">
       <div class="profile">
         <img src="img/perfil.jpg" alt="Profile picture" class="avatar">
         <div class="profile-info">
-          <h1>Axel</h1>
-          <p class="role">Self-taught developer</p>
+          <h1>Axel Jerez</h1>
+          <p class="role" data-en="Backend Developer · Linux &amp; Server Infrastructure" data-es="Desarrollador Backend · Linux e Infraestructura de Servidores">
+            Backend Developer · Linux &amp; Server Infrastructure
+          </p>
         </div>
       </div>
 
-      <p class="tagline">
-        Three years writing code, building tools and solving problems.
-        From Linux utilities to server panels.
+      <p class="tagline" data-en="I build tools that solve real infrastructure problems: server panels, Linux utilities, Docker automation and custom integrations. Available for remote work." data-es="Construyo herramientas que resuelven problemas reales de infraestructura: paneles de servidores, utilidades para Linux, automatización con Docker e integraciones a medida. Disponible para trabajo remoto.">
+        I build tools that solve real infrastructure problems: server panels, Linux utilities, Docker automation and custom integrations. Available for remote work.
       </p>
 
       <div class="meta">
         <span class="status">
           <span class="dot"></span>
-          Available for projects
+          <span data-en="Available for remote work" data-es="Disponible para trabajo remoto">Available for remote work</span>
         </span>
         <span class="sep">·</span>
         <a href="https://github.com/itszencs" target="_blank">GitHub</a>
@@ -41,54 +57,50 @@
       </div>
     </header>
 
-    <section class="section reveal">
-      <h2>About</h2>
+    <section class="section reveal" id="about">
+      <h2 data-en="About" data-es="Sobre mí">About</h2>
       <div class="content">
-        <p>
-          I started programming at twelve, more out of curiosity than anything
-          else. What began as a game turned into a habit, and the habit turned
-          into a way of working.
+        <p data-en="I'm a backend developer with 3+ years of experience building tools for Linux, server management and automation. I currently work as a Backend Developer at Nervox Hosting, where I build and maintain infrastructure tooling." data-es="Soy desarrollador backend con más de 3 años de experiencia construyendo herramientas para Linux, gestión de servidores y automatización. Actualmente trabajo como Backend Developer en Nervox Hosting, donde construyo y mantengo herramientas de infraestructura.">
+          I'm a backend developer with 3+ years of experience building tools for Linux, server management and automation. I currently work as a Backend Developer at Nervox Hosting, where I build and maintain infrastructure tooling.
         </p>
-        <p>
-          I'm interested in code that solves real problems. I'd rather
-          understand how something works inside before using it, and when a
-          tool doesn't exist, I build it.
+        <p data-en="I focus on code that solves concrete problems. When a tool doesn't exist, I build it — from Pterodactyl-style panels to Docker automation and custom plugins. I work with clients and communities that need reliable, maintainable software." data-es="Me enfoco en código que resuelve problemas concretos. Cuando una herramienta no existe, la construyo: desde paneles estilo Pterodactyl hasta automatización con Docker y plugins a medida. Trabajo con clientes y comunidades que necesitan software confiable y mantenible.">
+          I focus on code that solves concrete problems. When a tool doesn't exist, I build it — from Pterodactyl-style panels to Docker automation and custom plugins. I work with clients and communities that need reliable, maintainable software.
         </p>
       </div>
     </section>
 
-    <section class="section reveal">
-      <h2>Skills</h2>
+    <section class="section reveal" id="skills">
+      <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
       <div class="content">
         <dl class="skills">
           <div class="skill-row">
-            <dt>Languages</dt>
+            <dt data-en="Languages" data-es="Lenguajes">Languages</dt>
             <dd>C++, Python, PHP, Java, JavaScript, HTML, CSS</dd>
           </div>
           <div class="skill-row">
-            <dt>Systems</dt>
-            <dd>Linux, Docker, server management, containers</dd>
+            <dt data-en="Systems" data-es="Sistemas">Systems</dt>
+            <dd data-en="Linux, Docker, server management, containers" data-es="Linux, Docker, gestión de servidores, contenedores">Linux, Docker, server management, containers</dd>
           </div>
           <div class="skill-row">
-            <dt>Areas</dt>
-            <dd>Backend, automation, performance optimization, security, AI-assisted development</dd>
+            <dt data-en="Areas" data-es="Áreas">Areas</dt>
+            <dd data-en="Backend, automation, performance optimization, security, AI-assisted development" data-es="Backend, automatización, optimización de rendimiento, seguridad, desarrollo asistido por IA">Backend, automation, performance optimization, security, AI-assisted development</dd>
           </div>
         </dl>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="reveal">Projects</h2>
+    <section class="section" id="projects">
+      <h2 class="reveal" data-en="Projects" data-es="Proyectos">Projects</h2>
 
       <article class="project reveal">
         <div class="project-img-wrap">
           <img src="img/editor-codigo.jpg" alt="Code editor" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Code editor for Linux</h3>
+          <h3 data-en="Code editor for Linux" data-es="Editor de código para Linux">Code editor for Linux</h3>
           <span class="year">2026</span>
         </div>
-        <p>A native programming environment for Linux, with syntax highlighting, file explorer and project management.</p>
+        <p data-en="A native programming environment for Linux, with syntax highlighting, file explorer and project management." data-es="Entorno de programación nativo para Linux, con resaltado de sintaxis, explorador de archivos y gestión de proyectos.">A native programming environment for Linux, with syntax highlighting, file explorer and project management.</p>
         <p class="tech">C++ · GTK · Linux</p>
       </article>
 
@@ -97,10 +109,10 @@
           <img src="img/optimizador.jpg" alt="System optimizer" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>System optimizer</h3>
+          <h3 data-en="System optimizer" data-es="Optimizador de sistema">System optimizer</h3>
           <span class="year">2026</span>
         </div>
-        <p>Tool that monitors CPU, RAM, disk and temperature, and suggests concrete actions to improve performance.</p>
+        <p data-en="Tool that monitors CPU, RAM, disk and temperature, and suggests concrete actions to improve performance." data-es="Herramienta que monitorea CPU, RAM, disco y temperatura, y sugiere acciones concretas para mejorar el rendimiento.">Tool that monitors CPU, RAM, disk and temperature, and suggests concrete actions to improve performance.</p>
         <p class="tech">C++ · Qml · Linux</p>
       </article>
 
@@ -109,10 +121,10 @@
           <img src="img/editor-imagenes.jpg" alt="Image editor" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Image editor</h3>
+          <h3 data-en="Image editor" data-es="Editor de imágenes">Image editor</h3>
           <span class="year">2026</span>
         </div>
-        <p>Editor with layers, drawing tools, opacity control and color management.</p>
+        <p data-en="Editor with layers, drawing tools, opacity control and color management." data-es="Editor con capas, herramientas de dibujo, control de opacidad y gestión de color.">Editor with layers, drawing tools, opacity control and color management.</p>
         <p class="tech">C++ · Qml</p>
       </article>
 
@@ -121,10 +133,10 @@
           <img src="img/panel-servidores.jpg" alt="Server panel" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Server management panel</h3>
+          <h3 data-en="Server management panel" data-es="Panel de gestión de servidores">Server management panel</h3>
           <span class="year">2026</span>
         </div>
-        <p>Pterodactyl-style system to manage Docker containers, allocate resources and handle users.</p>
+        <p data-en="Pterodactyl-style system to manage Docker containers, allocate resources and handle users." data-es="Sistema estilo Pterodactyl para gestionar contenedores Docker, asignar recursos y administrar usuarios.">Pterodactyl-style system to manage Docker containers, allocate resources and handle users.</p>
         <p class="tech">PHP · MySQL · Docker</p>
       </article>
 
@@ -133,10 +145,10 @@
           <img src="img/anticheat.jpg" alt="Minecraft anticheat" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Minecraft anticheat</h3>
+          <h3 data-en="Minecraft anticheat" data-es="Anticheat para Minecraft">Minecraft anticheat</h3>
           <span class="year">2026</span>
         </div>
-        <p>Client that scans system files for suspicious modifications, and reports them to a web panel in real time.</p>
+        <p data-en="Client that scans system files for suspicious modifications, and reports them to a web panel in real time." data-es="Cliente que escanea archivos del sistema en busca de modificaciones sospechosas y las reporta a un panel web en tiempo real.">Client that scans system files for suspicious modifications, and reports them to a web panel in real time.</p>
         <p class="tech">C++ · PHP · HTTP API</p>
       </article>
 
@@ -145,10 +157,10 @@
           <img src="img/mini-os.jpg" alt="Mini operating system" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Mini operating system in HTML/CSS</h3>
+          <h3 data-en="Mini operating system in HTML/CSS" data-es="Mini sistema operativo en HTML/CSS">Mini operating system in HTML/CSS</h3>
           <span class="year">2026</span>
         </div>
-        <p>A functional kernel that runs in the browser, with windows, terminal and simulated process management.</p>
+        <p data-en="A functional kernel that runs in the browser, with windows, terminal and simulated process management." data-es="Un kernel funcional que corre en el navegador, con ventanas, terminal y gestión simulada de procesos.">A functional kernel that runs in the browser, with windows, terminal and simulated process management.</p>
         <p class="tech">Assembly · C++ · HTML · CSS · JavaScript</p>
       </article>
 
@@ -157,10 +169,10 @@
           <img src="img/optimizador-android.jpg" alt="Android optimizer" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Android optimization app</h3>
+          <h3 data-en="Android optimization app" data-es="App de optimización para Android">Android optimization app</h3>
           <span class="year">2026</span>
         </div>
-        <p>Mobile app that shows device status and lets you free up resources with a tap.</p>
+        <p data-en="Mobile app that shows device status and lets you free up resources with a tap." data-es="App móvil que muestra el estado del dispositivo y permite liberar recursos con un toque.">Mobile app that shows device status and lets you free up resources with a tap.</p>
         <p class="tech">Kivy · Python</p>
       </article>
 
@@ -169,10 +181,10 @@
           <img src="img/juego-ddlc.jpg" alt="Narrative game" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>DDLC-style narrative game</h3>
+          <h3 data-en="DDLC-style narrative game" data-es="Juego narrativo estilo DDLC">DDLC-style narrative game</h3>
           <span class="year">2025</span>
         </div>
-        <p>Visual novel with full menus, save system and multiple narrative routes.</p>
+        <p data-en="Visual novel with full menus, save system and multiple narrative routes." data-es="Novela visual con menús completos, sistema de guardado y múltiples rutas narrativas.">Visual novel with full menus, save system and multiple narrative routes.</p>
         <p class="tech">Ren'Py · Python</p>
       </article>
 
@@ -181,41 +193,53 @@
           <img src="img/river-hub.jpg" alt="Interactive website" class="project-img">
         </div>
         <div class="project-meta">
-          <h3>Interactive website</h3>
+          <h3 data-en="Interactive website" data-es="Sitio web interactivo">Interactive website</h3>
           <span class="year">2025</span>
         </div>
-        <p>Fan-made page with a penalty shootout minigame, responsive design and smooth navigation.</p>
+        <p data-en="Fan-made page with a penalty shootout minigame, responsive design and smooth navigation." data-es="Página hecha por un fan con un minijuego de penales, diseño responsive y navegación fluida.">Fan-made page with a penalty shootout minigame, responsive design and smooth navigation.</p>
         <p class="tech">HTML · CSS · JavaScript</p>
       </article>
 
     </section>
 
-    <section class="section reveal">
-      <h2>Experience</h2>
+    <section class="section reveal" id="experience">
+      <h2 data-en="Experience" data-es="Experiencia">Experience</h2>
       <div class="content">
         <dl class="experience">
           <div class="exp-row">
-            <dt>Self-taught development</dt>
+            <dt data-en="Backend Developer at Nervox Hosting" data-es="Backend Developer en Nervox Hosting">Backend Developer at Nervox Hosting</dt>
+            <dd>2025 — present</dd>
+          </div>
+          <div class="exp-row">
+            <dt data-en="30+ personal projects (Linux, panels, plugins)" data-es="30+ proyectos personales (Linux, paneles, plugins)">30+ personal projects (Linux, panels, plugins)</dt>
+            <dd>2025 — present</dd>
+          </div>
+          <div class="exp-row">
+            <dt data-en="Self-taught development" data-es="Desarrollo autodidacta">Self-taught development</dt>
             <dd>2023 — present</dd>
           </div>
           <div class="exp-row">
-            <dt>30+ personal projects</dt>
-            <dd>2025 — present</dd>
-          </div>
-          <div class="exp-row">
-            <dt>Backend Developer at Nervox Hosting</dt>
-            <dd>2025 — present</dd>
-          </div>
-          <div class="exp-row">
-            <dt>AI-assisted development</dt>
+            <dt data-en="AI-assisted development" data-es="Desarrollo asistido por IA">AI-assisted development</dt>
             <dd>2025 — present</dd>
           </div>
         </dl>
       </div>
     </section>
 
+    <section class="section reveal" id="cta">
+      <h2 data-en="Work with me" data-es="Trabajá conmigo">Work with me</h2>
+      <div class="content">
+        <p data-en="I take on remote projects: custom panels, Docker automation, Linux tooling and Discord/server integrations. Starting at $50 USD per plugin or panel — final price depends on scope." data-es="Acepto proyectos remotos: paneles a medida, automatización con Docker, herramientas para Linux e integraciones para Discord/servidores. Desde $50 USD por plugin o panel — el precio final depende del alcance.">
+          I take on remote projects: custom panels, Docker automation, Linux tooling and Discord/server integrations. Starting at $50 USD per plugin or panel — final price depends on scope.
+        </p>
+        <p>
+          <a href="services.html" class="btn" data-en="See services →" data-es="Ver servicios →">See services →</a>
+        </p>
+      </div>
+    </section>
+
     <footer class="footer reveal">
-      <p class="footer-text">Let's talk</p>
+      <p class="footer-text" data-en="Let's talk" data-es="Hablemos">Let's talk</p>
       <div class="footer-links">
         <a href="https://github.com/itszencs" target="_blank">
           GitHub
@@ -235,5 +259,32 @@
   </main>
 
   <script src="script.js"></script>
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll('.lang-btn');
+      const STORAGE_KEY = 'axel-lang';
+
+      function setLang(lang) {
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-en][data-es]').forEach(function (el) {
+          el.textContent = el.getAttribute('data-' + lang);
+        });
+        buttons.forEach(function (b) {
+          b.classList.toggle('active', b.dataset.lang === lang);
+        });
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.dataset.lang);
+        });
+      });
+
+      let saved = 'en';
+      try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) {}
+      setLang(saved);
+    })();
+  </script>
 </body>
 </html>
